@@ -1,0 +1,17 @@
+header{
+    width: 1000px;
+    height: 200px;
+    background: blue;
+    margin: 20px;
+    border: 5px solid red;
+    padding: 20px;
+}
+
+#logo{
+    width: 200px;
+    height: 60px;
+    background: green;
+    border: 5px solid white;
+    border-radius: 10px;
+
+}

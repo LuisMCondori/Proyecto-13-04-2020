@@ -1,0 +1,236 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;/*Establece la femilia de la fuente*/
+}
+
+#chat{
+    position: fixed;/*El valor FIXED hace que el elemento se coloque respecto al viewport*/
+    width: 250px;/*Ancho del Box*/
+    height: 40px;/*Largo del Box*/
+    background: magenta;/*Fondo del box*/
+    bottom: 0px;/*Distancia parte Inferior 0px*/
+    right: 20px; /*Distancia Derecha 20px*/
+    z-index: 10;/*Nos permite modificar el orden de las capas en el eje "Z"*/
+    color: white;/*Color a los elementos*/
+    text-align: center;/*Alinear el texto Horizontal. Solo elementos de bloque*/
+    line-height: 40px;/*Alinear el texto Vertical*/
+    font-family: 'Kaushan Script', cursive;/*Tipo de Fuente*/
+    font-size: 20px;/*Tamaño de la fuente*/
+    border-radius: 20px 20px 0 0;/*Radio en los bordes*/
+    cursor: pointer;/*El cursor se vuelva puntero cuando se señale*/
+}
+
+/*---------------INICIA CABEZOTE------------*/
+header{
+    position: relative;/*Hace que el elemento se coloque respcto a su posicion en el flujo*/
+    width: 1000px;/*Acho del Box*/
+    height: 120px;/*Largo del Box*/
+    margin: 20px auto; /*20px=Eje Y  auto=Eje X*/
+}
+
+.logo{
+    position: absolute;/*Hace que el elemento se coloque respecto a su contenedor*/
+    top: 30px; /*Superior*/
+    left: 30px; /*Izquierda*/
+    width: 200px; /*Ancho del box*/
+    height: 60px; /*Altura* del box*/ 
+    font-family: 'Kaushan Script', cursive;/*Tipo de la fuente*/
+    font-size: 50px;/*Tamaño de la fuente*/
+    text-align: center;/*Alienar el texto Horizontal. Solo elemento de Bloque*/
+    line-height: 60px;/*Aline el texto en el eje Y*/
+}
+
+.redes{
+    position: absolute;/*Hace que el elemento se coloque respecto a su contenedor*/
+    width: 42px; /*Ancho del box*/
+    right: 42px; /*El espacio del borde del Box Derecho es 42px*/
+    border-radius: 100%;/*Borde de 100% osea un circulo*/
+    background: #ccc;/*Fondo del Box*/
+    text-align: center;/*Alinea el texto Horizontal. Solo elementos de Bloque*/
+    line-height: 42px;/*text alineado al nivel vertical*/
+    color: white;/*color de los elementos*/
+}
+
+#icono1{/*se pone # cuando es ID*/
+    top: 42px;/*Distancia desde la parte superior 42px*/
+    right: 120px;/*Distancia desde la parte derecha 120px*/
+    background: blue;/*Fondo del Box*/
+}
+
+#icono2{/*se pone # cuando es ID*/
+    top: 42px;/*Distancia desde la parte superior 42px*/
+    right: 71px;/*Distancia desde la parte derecha 72px*/
+    background: green;/*Fondo del Box*/
+}
+
+#icono3{/*se pone # cuando es ID*/
+    top: 42px;/*Distancia desde la parte superior 42px*/
+    right: 19px;/*Distancia desde la parte derecha 19px*/
+    background: red;/*Fondo del Box*/
+}
+
+/*-------------BARRA DE NAVEGACION---------------*/
+
+nav{
+    position: relative;/*Hace que el elemento se coloque respcto a su posicion en el flujo*/
+    width: 1000px;/*Ancho del Box*/
+    height: 48px;/*Altura del Box*/
+    background: #aaa; /*Fondo del Box*/
+    margin: auto;/*Margen*/
+}
+
+.botones{
+    float: left;/*float los hace flotar*/
+    width: 196px;/*Ancho del Box*/
+    height: 48px;/*Altura del Box*/
+    background: blueviolet;/*Fondo del Box*/
+    margin: 0px 2px;/*Margin Eje Y = 0px / Eje Z = 2px*/
+    font-family: 'Kaushan Script', cursive; /*Tipo de la Fuente*/
+    color: white; /*Color de los Elementos*/
+    text-align: center;/*Alinear el texto horizontal*/
+    line-height: 48px;/*Alinear el texto vertical*/
+}
+
+a .botones:hover{/*hover: Cuando pases el mouse cambiara*/
+    background: rgba(100, 0, 255, .4)   ; /*Fondo del Box*/
+}
+
+a .botones:active{/*Cuando se de clic cambiara de color*/
+    background: rgba(255, 0, 100, 1);/*Fondo del Box*/
+}
+
+/*----------PARTE SUPERIOR--------------*/
+
+.top{
+    position: relative;/*Hace que el elemento se coloque respcto a su posicion en el flujo*/
+    width: 1000px;/*Ancho del Box*/
+    height: 192px;/*Altura del Box*/
+    margin: 20px auto;/*Margen Eje Y = 20px / Eje X = auto*/
+}
+
+.top ul{
+    width: 1010px; /*Ancho del Box*/
+    height: 192px; /*Altura del Box*/
+}
+
+.top ul li{
+    float: left;
+    width: 326px;
+    height: 192px;
+    margin-right: 10px;/**/
+    text-align: center;/*Alinear los elementeos horizontal*/
+}
+
+.top ul li img{
+    border-radius: 100%;
+    height: 100px;
+}
+
+.top ul li h1{
+    font-family: 'Kaushan Script', cursive;/*Tipo de Fuente*/
+}
+
+.top ul li p{
+    font-size: 14px;/*Tamaño de fuente*/
+    margin: 10px;/*Margin 10px --> top right bottom left*/
+}
+
+
+/*------------SECCION----------------*/
+
+section{
+    position: relative;/*Hace que el elemento se coloque respecto a su flujo*/
+    width: 1000px;
+    height: 453px;
+    margin: 40px auto;/*Eje Y = 40px / Eje X = auto */
+}
+
+aside.izq{
+    position: absolute;/*Hace que el elemento se coloque respecto a su contenedor*/
+    left: 0;/*Espacio a la derecha = 0*/
+    top: 0;/*Espacio a la izquierda = 0*/
+    width: 200px;/*Ancho del Box*/
+    height: 453px;/*Altura del Box*/
+}
+
+aside.izq ul li{
+    background: cadetblue;
+    padding: 10px;/*Separacion entre el contenido y su borde*/
+    margin: 2px 16px;/*Eje Y = 2px / Eje X = 16px*/
+    list-style: square; /*Estilo de la lista*/
+    list-style-position: inside;/*Las viñetas se colocan por dentro o por fuera del elemento*/
+} 
+
+aside.izq ul li a{
+    text-decoration: none;/*Decoracion del Texto*/
+}
+
+aside.der{
+    position: absolute;/*Hace que el elemento se coloque respecto a su contenedor*/
+    right: 0;/*Derecha 0px*/
+    top: 0;/*Superior 0px*/
+    width: 200px;/*Ancho del Box*/
+    height: 453px;/*Altura del Box*/
+}
+
+aside.der h1{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(100, 0, 255, 1);
+    color: white;
+    margin-bottom: 5px;
+}
+
+aside.der input{
+    padding: 10px;/*Separacion entre el contenido y su borde*/
+    margin: 5px 0px;/*Eje Y = 5px / Eje X = 0px*/
+    width: 176px;/*Ancho del box 176px*/
+}
+
+aside.der input[type="text"]{
+    background: url(/images/usuario.PNG);
+    background-repeat: no-repeat;/*Repeticion de Imagenes*/
+    background-position: right;/*Establece la posicion de la imagen*/
+    background-size: contain;/*Establece el tamaño*/
+}
+
+article{
+    position: absolute;/*Hace que el elemento se coloque respecto a su contenedor*/
+    left: 200px;
+    top: 0;
+    width: 600px;
+    height:453px ; 
+}
+
+article h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+}
+
+article p img{
+    float: left;
+    margin-right: 40px;
+}
+
+article p{
+    margin: 5px 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/*-------------FOOTER--------------------*/
+
+footer{
+    position: relative;
+    width: 1000px;
+    height: 70px;
+    background: blueviolet;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}

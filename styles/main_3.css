@@ -1,0 +1,17 @@
+.grupo{
+    width: 200px;
+    height: 200px;
+    margin: 20px
+}
+
+#c1{
+    background: red;
+}
+
+#c2{
+    background: magenta;
+}
+
+#c3{
+    background: green;
+}
